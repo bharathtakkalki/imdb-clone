@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Movies from './screens/movies/Movies';
+import Movies from './Movies';
+// import Movies from './screens/movies/Movies';
 import Series from './screens/series/Series';
 
 
