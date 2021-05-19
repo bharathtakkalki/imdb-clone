@@ -1,23 +1,37 @@
 import axios from 'axios'
-import React from 'react'
+import React, { useState ,useEffect} from 'react'
+import Card from '../../components/common/card/Card'
 
-class NoUserFound extends Error {
-    constructor(){
-        super()
-    }
-}
-
-axios.get()
-.then()
-.catch(error => {
-    console.error(error)
-    throw NoUserFound("My Message - No user found")
-})
 
 function Movies() {
+    const [moviesData,setMoviesData] =  useState([])
+    useEffect(() =>{
+        getMoviesTitle()
+    },[])
+
+    const getMoviesTitle = () => {
+        axios.get("https://imdb8.p.rapidapi.com/title/get-popular-movies-by-genre",{
+            headers:{
+                "x-rapidapi-key": "",
+                "x-rapidapi-host": "imdb8.p.rapidapi.com",
+                "useQueryString": true
+            },
+            params:{
+            "genre": "/chart/popular/genre/adventure"
+        }})
+        .then(response =>{
+            setMoviesData(response.data)
+        })
+        .catch(error => console.log(error))
+
+    }
+
+
     return (
-        <div>
-            This is a Movies Page
+        <div className="movies">
+            {Array(30).fill().map((item,index) =>(
+                <Card title={moviesData[index]} imageUrl="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" year="2019" rating="115"/>
+            ))}
         </div>
     )
 }

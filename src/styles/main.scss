@@ -1,0 +1,15 @@
+// Default
+@import "./theme";
+@import "./typography";
+@import "./default";
+
+
+
+
+// Components
+@import "../components/common/header/header";
+@import "../components/common/card/card";
+
+
+//Screen 
+@import "../screens/movies/movies";
