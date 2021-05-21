@@ -14,7 +14,7 @@ function Movies() {
     const getMoviesTitle = () => {
         axios.get("https://imdb8.p.rapidapi.com/title/get-popular-movies-by-genre",{
             headers:{
-                "x-rapidapi-key": "542711802bmshcb5eeae83cc2d5ep1d5c0fjsnbd0ffe90ff1a",
+                "x-rapidapi-key": "",
                 "x-rapidapi-host": "imdb8.p.rapidapi.com",
                 "useQueryString": true
             },

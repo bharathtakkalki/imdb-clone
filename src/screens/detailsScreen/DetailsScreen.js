@@ -28,7 +28,7 @@ function DetailsScreen() {
         {
           headers: {
             "x-rapidapi-key":
-              "542711802bmshcb5eeae83cc2d5ep1d5c0fjsnbd0ffe90ff1a",
+              "",
             "x-rapidapi-host":
               "imdb-internet-movie-database-unofficial.p.rapidapi.com",
             useQueryString: true,
