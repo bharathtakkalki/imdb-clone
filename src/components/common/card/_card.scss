@@ -2,10 +2,12 @@
     display:flex;
     flex-direction:column;
     max-width: fit-content;
+    cursor: pointer;
     .image-container{
         border-radius: 8px;
         overflow: hidden;
         max-height:300px;
+        max-width: 200px;
         width:max-content;
         img{
             max-height:300px;

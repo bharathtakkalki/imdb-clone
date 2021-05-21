@@ -60,7 +60,8 @@ const Movies = () => {
 
     //         // AJAX calls =====> Asynchronous Javascript XML
     //         // JSON ====> JavaScript Object Notation
-    //         const xhrUserData = new XMLHttpRequest();
+            // const xhrUserData = new XMLHttpRequest();
+        
 
     //         // Different Methods of API GET,POST,PUT,DELETE,PATCH
     //         console.log(" Opening the connection")

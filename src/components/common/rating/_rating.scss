@@ -1,0 +1,28 @@
+.rating{
+    margin-top: 25px;
+    label{
+        font-size:16px;
+        font-weight:600;
+        color: $accent;
+    }
+    .stars-container{
+        display:flex;
+        align-items:center;
+        
+        .stars{
+            height:30px;
+            width:30px;
+            color:$accent;
+            display: flex;
+            align-items:center;
+            justify-content:space-evenly;
+            width:100%;
+            .empty{
+                color:$gray3
+            }
+        }
+        h3{
+            color:$gray1;
+        }
+    }
+}

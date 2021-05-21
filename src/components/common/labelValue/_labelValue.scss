@@ -1,0 +1,12 @@
+.label-value-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    label{
+        color:$accent;
+        margin-right: 8px;
+    }
+    p{
+        color:$gray1;
+    }
+}

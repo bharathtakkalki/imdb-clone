@@ -9,7 +9,10 @@
 // Components
 @import "../components/common/header/header";
 @import "../components/common/card/card";
+@import "../components/common/labelValue/labelValue";
+@import "../components/common/rating/rating";
 
 
 //Screen 
 @import "../screens/movies/movies";
+@import "../screens/detailsScreen/detailsScreen";
